@@ -26,11 +26,18 @@ Needed Applications:
     - connect to server https://github.com/Brittanykusi/Cloud-Managed-DB/blob/3ffc8345aba8c85ac0f9b4ec8e5944ce94ac9a28/sql_table_creation.py#L9-L17
     - create tables (example) https://github.com/Brittanykusi/Cloud-Managed-DB/blob/3ffc8345aba8c85ac0f9b4ec8e5944ce94ac9a28/sql_table_creation.py#L20-L33
 
-### Step 4. Create a python script called (sql_dummy_data.py) using python and send some dummy data into each of the tables. Please see notes for ideas related to dummy data. 
+### Step 4. Create a python script called (sql_dummy_data.py) using python and send some dummy data into each of the tables.
+- in your script make sure to 
+    - import all packages https://github.com/Brittanykusi/Cloud-Managed-DB/blob/a666366deb93d81d8b6ef372bf386d1dd78e45ac/sql_dummy_data.py#L2-L10
+    - connect to server https://github.com/Brittanykusi/Cloud-Managed-DB/blob/3ffc8345aba8c85ac0f9b4ec8e5944ce94ac9a28/sql_table_creation.py#L9-L17
+    - create dummy data (fake data input) https://github.com/Brittanykusi/Cloud-Managed-DB/blob/061d5bf79b4b342e4288d7ba2700925b9489f81e/script/sql_dummy_data.py#L127-L143
+    - create dummy data (manual input) https://github.com/Brittanykusi/Cloud-Managed-DB/blob/061d5bf79b4b342e4288d7ba2700925b9489f81e/script/sql_dummy_data.py#L35-L53
+    - create dummy data (other input) https://github.com/Brittanykusi/Cloud-Managed-DB/blob/061d5bf79b4b342e4288d7ba2700925b9489f81e/script/sql_dummy_data.py#L66-L81
 
 ### Step 4b. Connect to MySQL on computer terminal
 - simple way
--if you run into this error
+    - run ``` sudo mysql -u root -h 34.171.172.227 -p ``` 
+-if you run into this error " mysql not found " install homebrew via [install homebrew] https://brew.sh/
 
 ### Step 5. Create an ERD for your DB design using MySQL Work Bench. You must have at least two foreignKeys representing a relationship between at least 2 tables. 
 
