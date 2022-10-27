@@ -37,31 +37,30 @@ Needed Applications:
 ### Step 4b. Connect to MySQL on computer terminal
 - simple way
     - run ``` sudo mysql -u root -h 34.171.172.227 -p ``` 
--if you run into this error " mysql not found " install homebrew via [install homebrew] (https://brew.sh/)
+-if you run into this error " mysql not found " install homebrew via [install homebrew](https://brew.sh/) on your personal terminal
+    - you shuld then be able to run the above command
+    - if it doesnt work you will need to locate mysql on you device
+        - once you find the location/path run ``` sudo nano /etc/paths ``` and insert the path followed my mysql or myslqsh
+        - save and exit nano
+        - you should now be able to use the above command
 
 ### Step 5. Create an ERD for your DB design using MySQL Work Bench. You must have at least two foreignKeys representing a relationship between at least 2 tables. 
+- enter your application
+- connect to db
+    - click the (+) icon near mysql connections 
+    - create a connection name 
+    - input the host name, port, and username of your cloud server instance
+    - click okay and you will be prompted to input your password
+- create ERD diagram
+    -  click database at the top of your homescreen
+    -  navigate to reverse engineer
+    -  select the stored connection name
+    -  select the db
+    -  execute
 
-6. Github docs to include: 
-- a readme file that describes a) where you setup the mySQL db, b) any issues you ran into 
-- a images folder that contains: 
-    - screen shot of a ERD of your proposed setup (use either popSQL or mysql work bench) 
-    - screen shots of you connected to the sql server, performing the following queries: 
         - Query1: show databases (e.g., show databases;) 
         - Query2: all of the tables from your database (e.g., show tables;)  
         - Query3: select * from patient_portal.medications 
         - Query4: select * from patient_portal.treatment_procedures
         - Query5: select * from patient_portal.conditions
 
-Be CREATE with your dummy data and find examples that are from real-world codexes: 
-Medications: NDC codes
-Treatments/Procedures: CPT 
-Conditions: ICD10 codes
-Social_Determinants: LOINC codes 
-
-Resources to pull some test data: 
-NDC: https://dailymed.nlm.nih.gov/dailymed/index.cfm 
-CPT: https://www.aapc.com/codes/cpt-codes-range/
-ICD: https://icdcodelookup.com/icd-10/codes
-LOINC: https://www.findacode.com/loinc/LG41762-2--socialdeterminantsofhealth.html
-
-REAL CPT Values that are older: https://gist.github.com/lieldulev/439793dc3c5a6613b661c33d71fdd185
