@@ -37,7 +37,7 @@ Needed Applications:
 ### Step 4b. Connect to MySQL on computer terminal
 - simple way
     - run ``` sudo mysql -u root -h 34.171.172.227 -p ``` 
--if you run into this error " mysql not found " install homebrew via [install homebrew] https://brew.sh/
+-if you run into this error " mysql not found " install homebrew via [install homebrew] (https://brew.sh/)
 
 ### Step 5. Create an ERD for your DB design using MySQL Work Bench. You must have at least two foreignKeys representing a relationship between at least 2 tables. 
 
