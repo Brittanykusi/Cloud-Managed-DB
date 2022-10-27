@@ -35,7 +35,7 @@ create table if not exists patients (
 table_medications = """
 create table if not exists medications (
     id int auto_increment,
-    med_ndc varchar(255) default null unique,
+    med_ndc varchar(255) default null,
     med_human_name varchar(255) default null,
     med_is_dangerous varchar(255) default null,
     PRIMARY KEY (id)
@@ -53,12 +53,8 @@ create table if not exists conditions (
 table_treatments_procedures = """
 create table if not exists treatments_procedures (
     id int auto_increment,
-    name_of_condition varchar(255) default null unique,
-    treatment_code varchar(255) default null unique,
-    treatment_name varchar(255) default null,
-    procedure_code varchar(255) default null unique,
-    procedure_name varchar(255) default null,
-    icd10_code varchar(255) default null unique,
+    cpt_code varchar(255) default null unique,
+    cpt_description varchar(255) default null,
     PRIMARY KEY (id),
     FOREIGN KEY (icd10_code) REFERENCES conditions(icd10_code) ON DELETE CASCADE
 ); 
@@ -77,12 +73,10 @@ create table if not exists patient_medications (
 table_social_determinants = """
 create table if not exists social_determinants (
     id int auto_increment,
-    social_determinant varchar(255) default null,
-    income_level varchar(255) default null,
-    med_ndc varchar(255) default null,
-    PRIMARY KEY (id),
-    FOREIGN KEY (med_ndc) REFERENCES medications(med_ndc) ON DELETE CASCADE
-); 
+    loinc_code varchar(255) default null,
+    loinc_descritption varchar(255) default null,
+    PRIMARY KEY (id)
+    ); 
 """
 db_gcp.execute(table_patients)
 db_gcp.execute(table_medications)
