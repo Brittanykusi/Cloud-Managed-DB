@@ -55,6 +55,7 @@ create table if not exists treatments_procedures (
     id int auto_increment,
     cpt_code varchar(255) default null unique,
     cpt_description varchar(255) default null,
+    icd10_code varchar(255) default null unique,
     PRIMARY KEY (id),
     FOREIGN KEY (icd10_code) REFERENCES conditions(icd10_code) ON DELETE CASCADE
 ); 
@@ -74,7 +75,7 @@ table_social_determinants = """
 create table if not exists social_determinants (
     id int auto_increment,
     loinc_code varchar(255) default null,
-    loinc_descritption varchar(255) default null,
+    loinc_description varchar(255) default null,
     PRIMARY KEY (id)
     ); 
 """

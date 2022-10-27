@@ -182,7 +182,7 @@ db_gcp.execute(loinc)
 ### create fake data for treatments_procedures table
 cptcodes = pd.read_csv('https://gist.githubusercontent.com/lieldulev/439793dc3c5a6613b661c33d71fdd185/raw/25c3abcc5c24e640a0a5da1ee04198a824bf58fa/cpt4.csv')
 list(cptcodes.columns)
-newCPTcode = cptcodes.rename(columns={'com.medigy.persist.reference.type.clincial.CPT.code':'CPT_code', 'label':'CPT_description'})
+newCPTcode = cptcodes.rename(columns={'com.medigy.persist.reference.type.clincial.CPT.code':'cpt_code', 'label':'cpt_description'})
 newCPTcode.sample(n=100)
 
 insertQuery = "INSERT INTO treatments_procedures (cpt_code, cpt_description) VALUES (%s, %s)"
