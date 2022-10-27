@@ -58,9 +58,3 @@ Needed Applications:
     -  select the db
     -  execute
 
-        - Query1: show databases (e.g., show databases;) 
-        - Query2: all of the tables from your database (e.g., show tables;)  
-        - Query3: select * from patient_portal.medications 
-        - Query4: select * from patient_portal.treatment_procedures
-        - Query5: select * from patient_portal.conditions
-
