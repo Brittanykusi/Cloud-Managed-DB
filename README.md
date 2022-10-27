@@ -34,7 +34,7 @@ Needed Applications:
     - create dummy data (manual input) https://github.com/Brittanykusi/Cloud-Managed-DB/blob/061d5bf79b4b342e4288d7ba2700925b9489f81e/script/sql_dummy_data.py#L35-L53
     - create dummy data (other input) https://github.com/Brittanykusi/Cloud-Managed-DB/blob/061d5bf79b4b342e4288d7ba2700925b9489f81e/script/sql_dummy_data.py#L66-L81
 
-### Step 4b. Connect to MySQL on computer terminal
+#### Step 4b. Connect to MySQL on computer terminal
 - simple way
     - run ``` sudo mysql -u root -h 34.171.172.227 -p ``` 
 -if you run into this error " mysql not found " install homebrew via [install homebrew](https://brew.sh/) on your personal terminal
